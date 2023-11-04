@@ -1,0 +1,27 @@
+---------------------
+INSTALLATION PACKAGES
+---------------------
+express, mongoose, dotenv, nodemon
+
+
+-------------------------------------
+INTIAL SETUP
+-------------------------------------
+
+
+
+
+
+-------------------------------------
+MONGO DB SETUP
+-------------------------------------
+
+1. setup mongodb atlas environment
+2. then extract the connection url from atlas and paste it in compass/.env file
+3. setup .env with DB url
+//NOTE- Always use async await + try-catch block when dealing with DB function
+4. initialise importing mongoose and express in src/db/index.js file
+5. setup dotenv and establish mongodb connection
+6. import connectDB into index.js and run.
+
+-------------------------------------
