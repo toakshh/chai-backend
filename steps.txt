@@ -7,8 +7,31 @@ express, mongoose, dotenv, nodemon
 -------------------------------------
 INTIAL SETUP
 -------------------------------------
+1. initialise node repository with "npm init".
+2. initialise the git repository with "git init".
+3. make initial commit in git.
+4. create a "public/temp" folders.
+//NOTE - to push and empty folder into git, create a file inside the folder with ".gitkeep"
+5. use online git ignore generators and push it into git ignore file excluding .env.sample
+6. create a new folder named "src" and nest app.js, constant.js, index.js 
+7. edit package.json file for modular importing syntax give "type":"module"
+8. MKDIR- controllers-(major functionality), db-(database connectivity), middlewares, models-(mongoose schema), routes-(api routes), utils-(for saving users photos,videos,data etc) 
+9. npm i -D prettier && touch .prettierrc with "{
+   "singleQuote": false,
+  "bracketSpacing": true,
+  "tabWidth": 4,
+  "semi": true,
+  "trailingComma": "es5"
+}"
+10. create .prettierignore with 
+/.vscode
+/node_modules
+./dist
 
 
+*.env
+.env
+.env.*
 
 
 
@@ -25,3 +48,13 @@ MONGO DB SETUP
 6. import connectDB into index.js and run.
 
 -------------------------------------
+Setting up express
+-------------------------------------
+1. app.js > create instance of app and listen to on particular port inside index.js file on promise return of DB connect.
+2. setup cookie parser "npm i cookie-parser" && setup cors "npm i cors"
+//NOTE: app."use" is used for middlewares
+3. setting up middlewares for cors, json limit and handeling urlencoded value, setting up basic assets
+4. setting up server secured cookies
+//NOTE: (err,req,res,next) 4 args in app.use()
+5. modularization of repeated fn in utils folder
+6. Error handeling && ApiResponse handle in utils folder
