@@ -5,7 +5,7 @@ express, mongoose, dotenv, nodemon
 
 
 -------------------------------------
-INTIAL SETUP
+INTIAL SETUP [[video6]]
 -------------------------------------
 1. initialise node repository with "npm init".
 2. initialise the git repository with "git init".
@@ -36,7 +36,7 @@ INTIAL SETUP
 
 
 -------------------------------------
-MONGO DB SETUP
+MONGO DB SETUP [[video7]]
 -------------------------------------
 
 1. setup mongodb atlas environment
@@ -48,7 +48,7 @@ MONGO DB SETUP
 6. import connectDB into index.js and run.
 
 -------------------------------------
-Setting up express
+Setting up express [[video8]]
 -------------------------------------
 1. app.js > create instance of app and listen to on particular port inside index.js file on promise return of DB connect.
 2. setup cookie parser "npm i cookie-parser" && setup cors "npm i cors"
@@ -58,3 +58,16 @@ Setting up express
 //NOTE: (err,req,res,next) 4 args in app.use()
 5. modularization of repeated fn in utils folder
 6. Error handeling && ApiResponse handle in utils folder
+
+
+-------------------------------------
+Models with JWT, Middlewares and bcrypt [[video9]]
+-------------------------------------
+1. creating models files with user.js & video.js name.
+2. defining schema into it.
+3. installing JWT, mongooseAggregatePaginateV2 and bcrypt
+4. defining middlewares to userSchema on save with bcrypt
+5. defining password comparision method using bcrypt
+6. define ACCESS & REFRESH token in .env file.
+//NOTE: accessToken is browser based and low term encrypted token whereas RefreshToken is server based and used to generate accessToken & authenticating users without letting them re-login with credentials.
+7. generate access token and refresh token
