@@ -71,3 +71,12 @@ Models with JWT, Middlewares and bcrypt [[video9]]
 6. define ACCESS & REFRESH token in .env file.
 //NOTE: accessToken is browser based and low term encrypted token whereas RefreshToken is server based and used to generate accessToken & authenticating users without letting them re-login with credentials.
 7. generate access token and refresh token
+
+
+---------------------------------------------
+upload file in backend MULTER [[video10]]
+---------------------------------------------
+1. install cloudinary + multer (+ fs)
+2. setup cloudinary and env variables with apikey ,secret and cloudname.
+3. create an util file for cloudinary and define functionalities 
+4. create a multer middleware and set it up for using diskstorage with destination and filename and export it 
