@@ -27,8 +27,12 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 
+// routes
+import userRouter from "./routes/user.routes.js"
 
-
+// routes declaration
+//NOTE:- as it now goes through a middleware so we are using app.use instead of app.get
+app.use("/api/v1/users", userRouter)
 
 
 

@@ -80,3 +80,11 @@ upload file in backend MULTER [[video10]]
 2. setup cloudinary and env variables with apikey ,secret and cloudname.
 3. create an util file for cloudinary and define functionalities 
 4. create a multer middleware and set it up for using diskstorage with destination and filename and export it 
+
+
+-----------------------------------------------
+router and controllers [[video12]]
+-----------------------------------------------
+1. create controller file for user and use asyncHandler method from utils to minimize the syntax.
+2. now define routes in app.js [Ln-30-35] and in user.routes.js [Ln-6]
+3. 
